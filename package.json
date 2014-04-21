@@ -1,0 +1,32 @@
+{
+  "name": "startify.js",
+  "version": "0.1.0",
+  "description": "Boilerplate for gulp-browserify-angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HerrLiljegren/startify.js.git"
+  },
+  "keywords": [
+    "startify",
+    "gulp",
+    "browserify",
+    "angular",
+    "bootstrap",
+    "jquery",
+    "boilerplate"
+  ],
+  "author": "Jesper Liljegren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HerrLiljegren/startify.js/issues"
+  },
+  "homepage": "https://github.com/HerrLiljegren/startify.js",
+  "devDependencies": {
+    "gulp": "^3.6.1",
+    "browserify": "^3.44.1"
+  }
+}
