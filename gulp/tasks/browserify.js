@@ -4,6 +4,10 @@ var livereload   = require('gulp-livereload');
 var concat       = require('gulp-concat-sourcemap');
 var handleErrors = require('../util/handleErrors');
 var source       = require('vinyl-source-stream');
+var bower        = require('wiredep')({ directory: 'app_root/src/vendor/bower_components' });
+
+
+
 
 gulp.task('browserify', function(){
 	return browserify('./app_root/src/main.js')
@@ -16,9 +20,8 @@ gulp.task('browserify', function(){
 });
 
 // Third-party libraries
-gulp.task('libs', function() {
-	console.log("ok");
-	gulp.src(['./app_root/src/vendor/**/*.js'])
-	.pipe(concat('libs.js'))
+gulp.task('vendor', function() {		
+	return gulp.src(bower.js)	
+	.pipe(concat('vendor.js'))
 	.pipe(gulp.dest('./app_root/build'));
 });
