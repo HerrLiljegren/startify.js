@@ -2,5 +2,5 @@
 
 var angular = require("angular");
 var $ = require('jquery');
-$("body").html("jQuer2s33y");
+$("body").html("jQuery");
 console.log('hello world!');
